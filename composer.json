@@ -1,0 +1,27 @@
+{
+    "name": "mobelop/module-braintree-graph-ql",
+    "description": "N/A",
+    "type": "magento2-module",
+    "require": {
+        "php": "~7.2.0",
+        "magento/framework": "*",
+        "magento/module-cms": "*",
+        "magento/module-widget": "*"
+    },
+    "suggest": {
+        "magento/module-graph-ql": "*",
+        "magento/module-store-graph-ql": "*"
+    },
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Mobelop\\BraintreeGraphQl\\": ""
+        }
+    }
+}

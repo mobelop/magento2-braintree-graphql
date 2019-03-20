@@ -1,0 +1,11 @@
+
+type Query {
+    checkoutConfig(
+        id: Int @doc(description: "")
+    ): CheckoutConfig @resolver(class: "Mobelop\\BraintreeGraphQl\\Model\\Resolver\\CheckoutConfig") @doc(description: "Returns BrainTree configuration for the current session")
+}
+
+type CheckoutConfig @doc(description: "") {
+    braintree: String @doc(description: "BrainTree configuration")
+    braintree_paypal: String @doc(description: "BrainTree PayPal configuration")
+}
